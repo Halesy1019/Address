@@ -48,8 +48,14 @@ public class Entry {
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+
+	@Override //<--(annotation)n overriding the "to String" method
+	public String toString() {
+		return "Entry [firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber=" + phoneNumber
+				+ ", emailAddress=" + emailAddress + "]";
+	}
 	
-  
+	
   
   
  
